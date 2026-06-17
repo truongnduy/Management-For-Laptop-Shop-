@@ -59,7 +59,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # RSpec for testing
-  gem "rspec-rails", "~> 7.1"
+  gem "rspec-rails", "~> 8.0"
   gem "rspec-expectations", "~> 3.13"
 
   # Auto-regenerate Swagger on file changes
