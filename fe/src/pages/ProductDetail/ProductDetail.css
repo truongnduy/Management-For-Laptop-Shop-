@@ -1,0 +1,154 @@
+/* src/pages/ProductDetail/ProductDetail.css */
+.product-detail-page {
+  max-width: 1100px;
+  margin: 70px auto 0;
+  padding: 40px 24px;
+}
+
+.back-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: var(--transition-smooth);
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.detail-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .detail-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-image-box {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.detail-image-box img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+.detail-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-name {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.detail-price-tag {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.stock-info {
+  font-size: 14px;
+}
+
+.in-stock-label {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.out-stock-label {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.description-box h3, .specifications-table h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--text-main);
+  border-left: 3px solid var(--primary);
+  padding-left: 8px;
+}
+
+.description-box p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.specifications-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.spec-label {
+  color: var(--text-muted);
+}
+
+.cart-controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  background: var(--bg-main);
+}
+
+.qty-selector button {
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: var(--transition-smooth);
+}
+
+.qty-selector button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.qty-selector span {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.detail-loading {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 16px;
+  color: var(--text-muted);
+}
